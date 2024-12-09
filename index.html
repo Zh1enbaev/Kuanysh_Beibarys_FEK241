@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Қуаныш Бейбарыс - Портфолио</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background: #1a3052;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+            font-weight: bold;
+        }
+        header h2 {
+            margin: 5px 0 0;
+            font-weight: normal;
+            font-size: 1.2em;
+        }
+        main {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #ffffff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        section h3 {
+            margin-top: 0;
+            font-size: 1.5em;
+            color: #1a3052;
+            border-bottom: 2px solid #d32f2f;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        .profile {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+        .profile img {
+            max-width: 200px;
+            border-radius: 50%;
+            margin-right: 20px;
+            border: 3px solid #d32f2f;
+        }
+        .profile p {
+            line-height: 1.6;
+        }
+        .skills, .achievements, .contacts, .projects {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .skills li, .achievements li, .contacts li, .projects li {
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+        }
+        .skills li::before,
+        .achievements li::before,
+        .contacts li::before,
+        .projects li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #d32f2f;
+            font-size: 1.2em;
+            line-height: 1;
+        }
+        footer {
+            background: #1a3052;
+            color: #ffffff;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+        @media (max-width: 600px) {
+            .profile {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .profile img {
+                margin: 0 0 20px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Қуаныш Бейбарыс</h1>
+        <h2>КазҰПУ студенті, ФЕК241 тобы (физика - ғылыми, 1 курс)</h2>
+    </header>
+
+    <main>
+        <section class="introduction">
+            <h3>Өзім туралы</h3>
+            <div class="profile">
+                <img src="https://i.postimg.cc/Wb6nt00m/IMG-20241209-WA0006.jpg" alt="Қуаныш Бейбарыс фото">
+                <div>
+                    <p>Мен, Қуаныш Бейбарыс, Абай атындағы Қазақ Ұлттық Педагогикалық Университетінің физика (ғылыми бағыт) мамандығы бойынша ФЕК241 тобында оқимын. Физика ғылымының терең теориялық негіздеріне қызығып, инновациялық оқыту әдістерін меңгеруге және жастар арасында ғылымды кеңінен насихаттауға ерекше көңіл бөлемін.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="education">
+            <h3>Білімі</h3>
+            <p><strong>Абай атындағы ҚазҰПУ:</strong> Физика (ғылыми бағыт) бакалавриаты, 2024 – қазіргі уақытқа дейін (1 курс).</p>
+        </section>
+
+        <section class="skills-section">
+            <h3>Қабілеттер мен дағдылар</h3>
+            <ul class="skills">
+                <li>Теориялық және эксперименттік физика</li>
+                <li>Физикалық зертханалық қондырғылармен жұмыс</li>
+                <li>Деректерді талдау, математикалық модельдеу</li>
+                <li>Оқу материалдарын дайындау</li>
+                <li>Қазақ, орыс, ағылшын тілдеріндегі ғылыми әдебиеттермен жұмыс</li>
+            </ul>
+        </section>
+
+        <section class="achievements-section">
+            <h3>Жетістіктер мен жобалар</h3>
+            <ul class="achievements">
+                <li>ҚазҰПУ-дың студенттік ғылыми конференциясында «Физиканы оқытудың заманауи үрдістері» баяндамасы</li>
+                <li>Университет грант иегері</li>
+                <li>«Сандық моделдеу арқылы физикалық процестерді зерттеу» веб-жобасына қатысу</li>
+            </ul>
+        </section>
+
+        <section class="projects-section">
+            <h3>Зерттеулер</h3>
+            <ul class="projects">
+                <li>Асқын өткізгіштердің электромагниттік қасиеттерін зерттеу</li>
+                <li>Атомдық спектроскопия бойынша эксперименттердің нәтижелерін талдау</li>
+            </ul>
+        </section>
+
+        <section class="contacts-section">
+            <h3>Байланыс ақпараты</h3>
+            <ul class="contacts">
+                <li><strong>Email:</strong> kuanyshbeibarys2929@gmail.com</li>
+                <li><strong>Телефон:</strong> +7(707)623-85-67</li>
+                <li><strong>Мекенжай:</strong> Алматы қаласы</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Қуаныш Бейбарыс.</p>
+    </footer>
+</body>
+</html>
