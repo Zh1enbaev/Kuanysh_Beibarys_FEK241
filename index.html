@@ -1,158 +1,214 @@
 <!DOCTYPE html>
-<html lang="kk">
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Қуаныш Бейбарыс - Портфолио</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audi Cars</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: #f5f5f5;
+            background-color: #f4f4f9;
             color: #333;
         }
         header {
-            background: #1a3052;
-            color: #ffffff;
-            padding: 20px 0;
+            background-color: #000;
+            color: #fff;
+            padding: 1.5rem 0;
             text-align: center;
+            font-size: 2rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
         }
-        header h1 {
-            margin: 0;
-            font-size: 2em;
-            font-weight: bold;
+        nav {
+            background-color: #333;
+            overflow: hidden;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         }
-        header h2 {
-            margin: 5px 0 0;
-            font-weight: normal;
-            font-size: 1.2em;
+        nav a {
+            float: left;
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            transition: background-color 0.3s ease, color 0.3s ease;
         }
-        main {
-            max-width: 900px;
-            margin: 40px auto;
-            background: #ffffff;
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
             padding: 20px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
-        section {
-            margin-bottom: 30px;
-        }
-        section h3 {
-            margin-top: 0;
-            font-size: 1.5em;
-            color: #1a3052;
-            border-bottom: 2px solid #d32f2f;
-            display: inline-block;
-            padding-bottom: 5px;
-        }
-        .profile {
+        .car {
             display: flex;
-            flex-direction: column; 
-            align-items: center; 
-            text-align: center;
-        }
-        .profile img {
-            max-width: 200px;
-            border-radius: 50%;
+            align-items: center;
             margin-bottom: 20px;
-            border: 3px solid #d32f2f;
+            background: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
         }
-        .profile p {
-            line-height: 1.6;
+        .car:hover {
+            transform: scale(1.05);
         }
-        .skills, .achievements, .contacts, .projects {
-            list-style: none;
-            padding: 0;
-            margin: 0;
+        .car img {
+            width: 180px;
+            height: auto;
+            margin-right: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
-        .skills li, .achievements li, .contacts li, .projects li {
+        .car-details {
+            flex: 1;
+        }
+        .car-details h3 {
             margin-bottom: 10px;
-            padding-left: 25px;
-            position: relative;
+            color: #000;
         }
-        .skills li::before,
-        .achievements li::before,
-        .contacts li::before,
-        .projects li::before {
-            content: "•";
-            position: absolute;
-            left: 0;
-            color: #d32f2f;
-            font-size: 1.2em;
-            line-height: 1;
+        .video-review {
+            margin-top: 20px;
+            background: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .video-review iframe {
+            width: 100%;
+            height: 315px;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .extras {
+            margin-top: 40px;
+        }
+        .extras h2 {
+            color: #000;
+        }
+        .extras p {
+            margin-bottom: 10px;
         }
         footer {
-            background: #1a3052;
-            color: #ffffff;
+            background-color: #000;
+            color: #fff;
             text-align: center;
-            padding: 15px;
-            margin-top: 40px;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+        }
+        footer a {
+            color: #fff;
+            text-decoration: underline;
+        }
+        footer a:hover {
+            color: #ddd;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Қуаныш Бейбарыс</h1>
-        <h2>КазҰПУ студенті, ФЕК244 тобы (физика - ғылыми, 1 курс)</h2>
+        <h1>Welcome to the World of Audi Cars</h1>
     </header>
-
-    <main>
-        <section class="introduction">
-            <h3>Өзім туралы</h3>
-            <div class="profile">
-                <img src="https://i.postimg.cc/Wb6nt00m/IMG-20241209-WA0006.jpg" alt="Қуаныш Бейбарыс фото">
-                <div>
-                    <p>Мен, Қуаныш Бейбарыс, Абай атындағы Қазақ Ұлттық Педагогикалық Университетінің физика (ғылыми бағыт) мамандығы бойынша ФЕК244 тобында оқимын. Физика ғылымының терең теориялық негіздеріне қызығып, инновациялық оқыту әдістерін меңгеруге және жастар арасында ғылымды кеңінен насихаттауға ерекше көңіл бөлемін.</p>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#models">Models</a>
+        <a href="#about">About Audi</a>
+        <a href="#extras">Extras</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="models">
+            <h2>Audi Car Models</h2>
+            <div class="car">
+                <img src="https://strg1.nm.kz/neofiles/serve-image/644a403c58f147000740b9ca/1190x500/q90" alt="Audi A4">
+                <div class="car-details">
+                    <h3>Audi A4</h3>
+                    <p>The Audi A4 combines sportiness and elegance, offering a premium driving experience.</p>
+                </div>
+            </div>
+            <div class="car">
+                <img src="https://audi.kz/userdata/cars/cars_35/image_1276/1704969240_7147354_b.jpg" alt="Audi Q7">
+                <div class="car-details">
+                    <h3>Audi Q7</h3>
+                    <p>The Audi Q7 is a luxurious SUV with advanced technology and ample space for the whole family.</p>
+                </div>
+            </div>
+            <div class="car">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl2WnMsRdDjU77N60ckMsYD4mJnzS2JKIihQ&s" alt="Audi R8">
+                <div class="car-details">
+                    <h3>Audi R8</h3>
+                    <p>The Audi R8 is a high-performance sports car that delivers thrilling speed and precision.</p>
+                </div>
+            </div>
+            <div class="car">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpXan9E1Kqns7jZIyswqxts_gYnuzbdE0bQQ&s" alt="Audi e-tron">
+                <div class="car-details">
+                    <h3>Audi e-tron</h3>
+                    <p>The Audi e-tron is an all-electric SUV that offers innovative technology and a sustainable driving experience.</p>
+                </div>
+            </div>
+            <div class="car">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRe15wXM7H1vC-0ACY7DTwvwdPPZl_DXiLfQ&s" alt="Audi TT">
+                <div class="car-details">
+                    <h3>Audi TT</h3>
+                    <p>The Audi TT is a stylish coupe with impressive performance and a bold design.</p>
+                </div>
+            </div>
+            <div class="car">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq-46S5m1_G7n-Nr-YCMcu-7yfFqqVlZZ0bQ&s" alt="Audi RS6">
+                <div class="car-details">
+                    <h3>Audi RS6 Avant</h3>
+                    <p>The Audi RS6 Avant is a high-performance wagon with immense power and sophisticated design.</p>
                 </div>
             </div>
         </section>
-
-        <section class="education">
-            <h3>Білімі</h3>
-            <p><strong>Абай атындағы ҚазҰПУ:</strong> Физика (ғылыми бағыт) бакалавриаты, 2024 – қазіргі уақытқа дейін (1 курс).</p>
+        <section class="video-review">
+            <h2>Video Reviews</h2>
+            <div>
+                <iframe src="https://www.youtube.com/watch?v=pbzj6mvaHb8" allowfullscreen></iframe>
+                <p>Watch this detailed review of the Audi R8, showcasing its speed and design excellence.</p>
+            </div>
+            <div style="margin-top: 20px;">
+                <iframe src="https://www.youtube.com/watch?v=VFXfq_lVqM4" allowfullscreen></iframe>
+                <p>Explore the Audi Q7 in action: a blend of luxury, space, and cutting-edge technology.</p>
+            </div>
+            <div style="margin-top: 20px;">
+                <iframe src="https://www.youtube.com/watch?v=vmPD-5DjTTg" allowfullscreen></iframe>
+                <p>Discover the Audi e-tron, an electric SUV redefining the future of sustainable mobility.</p>
+            </div>
+            <div style="margin-top: 20px;">
+                <iframe src="https://www.youtube.com/watch?v=R4D2v36qKxw" allowfullscreen></iframe>
+                <p>Take a closer look at the top features of the Audi RS6 Avant in this detailed video.</p>
+            </div>
         </section>
-
-        <section class="skills-section">
-            <h3>Қабілеттер мен дағдылар</h3>
-            <ul class="skills">
-                <li>Теориялық және эксперименттік физика</li>
-                <li>Физикалық зертханалық қондырғылармен жұмыс</li>
-                <li>Деректерді талдау, математикалық модельдеу</li>
-                <li>Оқу материалдарын дайындау</li>
-                <li>Қазақ, орыс, ағылшын тілдеріндегі ғылыми әдебиеттермен жұмыс</li>
-            </ul>
+        <section id="about">
+            <h2>About Audi</h2>
+            <p>Audi AG is a German automobile manufacturer that designs, engineers, produces, markets, and distributes luxury vehicles. Audi is a member of the Volkswagen Group and has its roots in Ingolstadt, Bavaria. With a focus on innovation, Audi continues to lead in technology and design.</p>
         </section>
-
-        <section class="achievements-section">
-            <h3>Жетістіктер мен жобалар</h3>
-            <ul class="achievements">
-                <li>ҚазҰПУ-дың студенттік ғылыми конференциясында «Физиканы оқытудың заманауи үрдістері» баяндамасы</li>
-                <li>Университет грант иегері</li>
-                <li>«Сандық моделдеу арқылы физикалық процестерді зерттеу» веб-жобасына қатысу</li>
-            </ul>
+        <section class="extras" id="extras">
+            <h2>Additional Features</h2>
+            <p>Audi cars are known for their advanced safety features, including adaptive cruise control, lane assist, and pre-sense technology.</p>
+            <p>The brand also offers customizable interiors with premium materials like leather and Alcantara.</p>
+            <p>For the tech enthusiasts, Audi integrates cutting-edge infotainment systems, including virtual cockpit displays and intuitive MMI touch response.</p>
         </section>
-
-        <section class="projects-section">
-            <h3>Зерттеулер</h3>
-            <ul class="projects">
-                <li>Асқын өткізгіштердің электромагниттік қасиеттерін зерттеу</li>
-                <li>Атомдық спектроскопия бойынша эксперименттердің нәтижелерін талдау</li>
-            </ul>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>For more information, visit the official <a href="https://www.audi.com" target="_blank">Audi website</a>. Follow us on social media for the latest updates and events.</p>
         </section>
-
-        <section class="contacts-section">
-            <h3>Байланыс ақпараты</h3>
-            <ul class="contacts">
-                <li><strong>Email:</strong> kuanyshbeibarys2929@gmail.com</li>
-                <li><strong>Телефон:</strong> +7(707)623-85-67</li>
-                <li><strong>Мекенжай:</strong> Алматы қаласы</li>
-            </ul>
-        </section>
-    </main>
-
+    </div>
     <footer>
-        <p>© 2024 Қуаныш Бейбарыс.</p>
+        <p>&copy; 2024 Audi Enthusiasts. All rights reserved. Designed with passion for Audi lovers. <a href="#top">Back to top</a></p>
     </footer>
 </body>
 </html>
